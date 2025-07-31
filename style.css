@@ -88,6 +88,14 @@ section.block .image {
     transform: translateY(-5px);
 }
 
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 180px;
+    object-fit: cover;
+  }
+
 /* Skills */
 .skills-list {
     display: flex;
@@ -123,7 +131,7 @@ input, textarea {
 }
 
 button {
-    background: var(--accent);
+    background-color: teal;
     color: white;
     border: none;
     padding: 12px;
@@ -134,7 +142,7 @@ button {
 }
 
 button:hover {
-    background: #d73f24;
+    background: rgb(0, 78, 78);
 }
 
 .githubLink {
@@ -151,4 +159,17 @@ button:hover {
 
 .italic {
     font-style: italic;
+}
+
+.skiText {
+    font-weight: 500;
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+}
+
+.project a:hover {
+    color: rgb(126, 126, 126);
 }

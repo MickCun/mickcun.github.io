@@ -1,0 +1,154 @@
+/* Reset and Base Styles */
+:root {
+    --primary: #111;
+    --accent: #f04e30;
+    --bg: #fdfdfd;
+    --text: #222;
+    --muted: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Block Styles */
+section.block {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+section.block.about,
+section.block.skills,
+section.block.projects,
+section.block.contact {
+    flex-direction: column;
+    text-align: center;
+}
+
+section.block .text {
+    flex: 1 1 400px;
+}
+
+section.block .image {
+    flex: 1 1 400px;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d73f24;
+}
+
+.githubLink {
+    line-height: 0px;
+}
+
+.projects-heading {
+    line-height: 0px;
+}
+
+.Michael {
+    color: teal;
+}
+
+.italic {
+    font-style: italic;
+}
